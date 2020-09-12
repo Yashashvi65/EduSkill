@@ -6,7 +6,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { graphql } from 'gatsby'
  import Heading from "../components/Reusable/Heading"
-import Infoblock from "../components/Reusable/infoblock"
+import Infoblock from "../components/Reusable/Infoblock"
+import Dualinfoblock from "../components/Reusable/Dualinfoblock"
 const IndexPage = ({data}) => (
   <Layout>
     <SEO title="Home"/>
@@ -19,7 +20,7 @@ const IndexPage = ({data}) => (
   
   />  
  <Infoblock heading="About Us"/> 
-  
+  <Dualinfoblock heading="Our Team"/>
   </Layout>
     
  

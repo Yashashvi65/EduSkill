@@ -5,11 +5,12 @@ import HeroSection from '../components/Reusable/HeroSection'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { graphql } from 'gatsby'
-import Heading from "../components/Reusable/Heading"
-import infoblock from "../components/Reusable/infoblock"
+ import Heading from "../components/Reusable/Heading"
+import Infoblock from "../components/Reusable/infoblock"
 const IndexPage = ({data}) => (
   <Layout>
     <SEO title="Home"/>
+    
   <HeroSection
   img={data.imgg.childImageSharp.fluid}
   title="I write Code"
@@ -17,10 +18,8 @@ const IndexPage = ({data}) => (
   heroclass="hero-background"
   
   />  
-  <infoblock heading="About Us" />
-  <infoblock heading="About Us" />
-  <infoblock heading="About Us" />
-  <infoblock heading="About Us" />
+ <Infoblock heading="About Us"/> 
+  
   </Layout>
     
  

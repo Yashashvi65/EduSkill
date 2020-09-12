@@ -1,15 +1,15 @@
 import React from 'react'
 import Heading from "./Heading"
-import {Link } from 'gatsby'
-export default function infoblock({heading}) {
+import { Link } from 'gatsby'
+export default function Infoblock({heading}) {
     return (
        <section className="bg-theme my-5 py-4">
         <div className="container">
-         <Heading title={heading}/>
+          <Heading title={heading}/> 
          <div className="row">
              <div className="col-10 col-sm-8 mx-auto text-center">
                  <p className="lead text-white mb-4">
-                 Gatsby is a React-based open source framework for creat
+                 Hey Everyone this is Yashashvi Singh Bhadauria  
                  
 
 

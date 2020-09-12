@@ -12,6 +12,7 @@ import Footer from './Reusable/Footer'
 import "./bootstrap.min.css"
 import "./layout.css"
 import Navbar from './Reusable/Navbar.js'
+import infoblock from "./Reusable/infoblock"
 
 const Layout=({children})=>(
 <>

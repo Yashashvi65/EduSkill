@@ -7,6 +7,7 @@ import SEO from "../components/seo"
 import { graphql } from 'gatsby'
  import Heading from "../components/Reusable/Heading"
 import Infoblock from "../components/Reusable/Infoblock"
+import Coursecart from "../components/Cart/Coursecart"
 import Dualinfoblock from "../components/Reusable/Dualinfoblock"
 const IndexPage = ({data}) => (
   <Layout>
@@ -20,6 +21,7 @@ const IndexPage = ({data}) => (
   
   />  
  <Infoblock heading="About Us"/> 
+ <Coursecart courses={data.courses}/>
   <Dualinfoblock heading="Our Team"/>
   </Layout>
     
@@ -35,6 +37,26 @@ const IndexPage = ({data}) => (
          }
        }
      }
+     courses:allContentfulCourses{
+      edges{
+        node{
+        id
+        title
+        price
+        category
+        description{
+          description
+        }
+          image{
+            fixed(width:200,height:120){
+              ...GatsbyContentfulFixed_tracedSVG
+            }
+          }
+        }
+      }
+      
+    }
+   
    }
   ` 
 
